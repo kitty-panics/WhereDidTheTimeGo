@@ -43,13 +43,13 @@ for i in ten_days:
     out_sum_min = round(out_sum_sec / 60, 2)
     out_sum_count = len(out_daily_data)
     out_tmp_list = [j for j in out_daily_data if j != 0]
-    out_sum_count_c = len(out_tmp_list)
+    out_sum_count_on = len(out_tmp_list)
     # 呼入
     in_daily_data = ten_days[i][1]
     in_sum_sec = sum(in_daily_data)
     in_sum_min = round(in_sum_sec / 60, 2)
     in_sum_count = len(in_daily_data)
     in_tmp_list = [j for j in in_daily_data if j != 0]
-    in_sum_count_c = len(in_tmp_list)
-    print(i + ': 出: ' + str(out_sum_count_c) + '/' + str(out_sum_count) + '次、' + str(out_sum_sec) + '秒(' + str(out_sum_min) + '分)')
-    print('            入: ' + str(in_sum_count_c) + '/' + str(in_sum_count) + '次、' + str(in_sum_sec) + '秒(' + str(in_sum_min) + '分)')
+    in_sum_count_on = len(in_tmp_list)
+    print(i + ': 出: ' + str(out_sum_count_on) + '/' + str(out_sum_count) + '次、' + str(out_sum_sec) + '秒(' + str(out_sum_min) + '分)')
+    print('            入: ' + str(in_sum_count_on) + '/' + str(in_sum_count) + '次、' + str(in_sum_sec) + '秒(' + str(in_sum_min) + '分)')
